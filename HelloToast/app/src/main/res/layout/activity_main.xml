@@ -7,30 +7,32 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-   <Button
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_weight="0.1"
-       android:id="@+id/toast"
-       android:text="Toast"/>
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:id="@+id/toast"
+        android:text="Toast" />
 
     <TextView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv"
         android:text="0"
-        android:layout_weight="4.8"
+        android:textColor="#0000FF"
+        android:layout_weight="9"
         android:textSize="150sp"
         android:gravity="center"/>
 
     <Button
+
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/count"
-        android:layout_weight="0.1"
-        android:text="count"/>
-
-
-
+        android:layout_weight="0.5"
+        android:text="count" />
 
 </LinearLayout>
