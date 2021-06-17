@@ -1,4 +1,4 @@
-package com.example.dailogspickers;
+package com.example.dailogpickers;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.example.dialogspickers.R;
 
 import java.util.Calendar;
 
