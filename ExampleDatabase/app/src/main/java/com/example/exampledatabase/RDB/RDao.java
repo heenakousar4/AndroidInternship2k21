@@ -15,10 +15,13 @@ import java.util.List;
 public interface RDao {
     @Insert
     void insert(RTable rTable);
+
     @Query("select * from RTable")
     LiveData<List<RTable>> readAll();
+
     @Update
     void update(RTable rTable);
+
     @Delete
     void delete(RTable rTable);
 }

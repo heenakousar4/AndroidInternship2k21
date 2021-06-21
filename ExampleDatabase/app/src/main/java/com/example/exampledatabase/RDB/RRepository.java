@@ -1,6 +1,7 @@
 package com.example.exampledatabase.RDB;
 
 import android.app.Application;
+import android.content.Context;
 import android.app.AsyncNotedAppOp;
 import android.os.AsyncTask;
 
@@ -23,7 +24,7 @@ public class RRepository {
         @Override
         protected Void doInBackground(RTable... rTables) {
             for(int i=0;i<rTables.length;i++){
-                rDatabase.rDao().insert(rTables[i]);
+                rDatabase.rDao().insert(rTables[0]);
             }
             return null;
         }
@@ -33,7 +34,7 @@ public class RRepository {
         @Override
         protected Void doInBackground(RTable... rTables) {
             for(int i=0;i<rTables.length;i++){
-                rDatabase.rDao().update(rTables[i]);
+                rDatabase.rDao().update(rTables[0]);
             }
             return null;
         }
@@ -42,7 +43,7 @@ public class RRepository {
         @Override
         protected Void doInBackground(RTable... rTables) {
             for(int i=0;i<rTables.length;i++){
-                rDatabase.rDao().delete(rTables[i]);
+                rDatabase.rDao().delete(rTables[0]);
             }
             return null;
         }

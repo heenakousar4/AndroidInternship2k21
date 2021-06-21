@@ -6,31 +6,20 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class RTable {
+
     @NonNull
     @PrimaryKey
-
     String sroll;
+
     String sname,snumber;
 
-    public RTable(@NonNull String sroll, String sname, String snumber) {
-        this.sroll = sroll;
-        this.sname = sname;
-        this.snumber = snumber;
-    }
-
+    @NonNull
     public String getSroll() {
         return sroll;
     }
 
-    public void setSroll(String sroll) {
+    public void setSroll(@NonNull String sroll) {
         this.sroll = sroll;
-    }
-    public String getSnumber() {
-        return snumber;
-    }
-
-    public void setSnumber(String snumber) {
-        this.snumber = snumber;
     }
 
     public String getSname() {
@@ -40,5 +29,15 @@ public class RTable {
     public void setSname(String sname) {
         this.sname = sname;
     }
-}
 
+    public String getSnumber() {
+        return getSnumber();
+    }
+
+    public void setSnumber(String snumber) {
+        this.snumber = snumber;
+    }
+
+
+
+}
